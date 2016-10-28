@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/** global **/
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+/** header components **/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    color: #aaa;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+header .credit {
+    font-size: 12px;
+    margin-right: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+/** main component **/
+main {
+    margin-top: 40px;
+}
+
+/** footer components **/
+footer {
+    color: #aaa;
+    text-align: center;
+}
+
+/** layout components **/
+.micro-layout {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.col2-layout {
+    display: flex;
+}
+
+.col2-layout > aside {
+    position: fixed;
+    width: 200px;
+    top: 0px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.col2-layout > article {
+    flex: 1;
+}
+
+/** form components **/
+form .form-button {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/** card components **/
+.card {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+    border-bottom: 4px solid #ccc;
+    background-color: #fff;
+}
+
+.card > h1 {
+    color: #45a4e6;
+    font-size: 18px;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+/** input components **/
+.input-container {
+    position: relative;
+    display: flex;
+    padding: 10px 0 17px 0;
+}
+
+.input-container label {
+    flex: 0.8;
+    color: #777;
+    font-size: 12px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.input-container > input[type='text'],
+.input-container > input[type='password'],
+.input-error-container {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.input-container input[type='text'],
+.input-container input[type='password'] {
+    width: 100%;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.input-container input[type='text']:not(.input-invalid),
+.input-container input[type='password']:not(.input-invalid) {
+    border-bottom: 2px solid #a0bc61;
+}
+
+.input-textarea-error-container {
+    position: relative;
+}
+
+.input-textarea-error-container .input-error {
+    right: 0;
+    bottom: -20px;
+}
+
+.input-invalid {
+    border-bottom: 2px solid red;
+}
+
+.input-error {
+    display: none;
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    bottom: 0;
+    margin-top: 3px;
+}
+
+.input-button {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 4px solid #3981b3;
+    background-color: #45a4e6;
+    text-transform: uppercase;  
+}
+
+/** user-credit components (inside `aside` element) **/
+.user-credit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user-credit > img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+}
+
+.user-credit > div {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/** nav components (inside `aside` element) **/
+.aside-nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aside-nav > ul > li:hover {
+    background-color: #ededed;
+}
+
+.aside-nav > ul > li > a {
+    display: block;
+    padding: 15px 20px;
+}
+
+/** profile components **/
+.profile-card {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/** tweet components **/
+.tweet-creation-form,
+.tweet-card {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.tweet-expandable-form textarea {
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    padding: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+}
+
+.tweet-expandable-form .submit-button {
+    display: none;
+    margin-top: 5px;
+}
+
+.tweet-expandable-form-expanded textarea {
+    height: 5em;
+}
+
+.tweet-expandable-form-expanded .submit-button {
+    display: inline;
+}
+
+.tweet-card {
+    display: block;
+    padding: 10px;
+}
+
+.tweet-credit {
+    display: flex;
+}
+
+.tweet-credit > img {
+    width: 48px;
+    height: 48px;
+}
+
+.tweet-credit > div {
+    margin-left: 10px;
+    line-height: 48px;
+}
+
+.tweet-content {
+    margin-left: 58px;
+    margin-bottom: 20px;
+}
